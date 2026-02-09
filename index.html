@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudharshanan Sathishkumar - Software Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">KSS</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="animated-greeting">
+                    <span class="wave">👋</span>
+                    <h1>Hello, I'm</h1>
+                </div>
+                <h2 class="hero-name">SUDHARSHANAN SATHISHKUMAR</h2>
+                <div class="hero-title">
+                    <span class="typing-text">SOFTWARE DEVELOPER</span>
+                </div>
+                <p class="hero-description">Enthusiastic learner and emerging Software Developer with a passion for creating innovative solutions</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View My Work</span>
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sudharshanan14/" target="_blank" class="social-icon" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/SUDHARSHANAN-K-S" target="_blank" class="social-icon" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:sudharshanansathishkumar@gmail.com" class="social-icon" data-tooltip="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-3d">
+                    <div class="avatar-container">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-circle">
+                            <img src="profile.jpg" alt="Sudharshanan Sathishkumar" class="profile-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame card-3d">
+                        <div class="profile-pic">
+                            <img src="profile.jpg" alt="Sudharshanan Sathishkumar" class="profile-photo-about">
+                        </div>
+                        <div class="floating-element element-1">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="floating-element element-2">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="floating-element element-3">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Sudharshanan Sathishkumar</h3>
+                    <h4 class="gradient-text">Software Developer</h4>
+                    <p>Enthusiastic learner and emerging Software Developer with growing experience in web development and a strong drive for continuous learning. Eager to strengthen frontend and backend skills by contributing to real-world projects and collaborating in team-based environments.</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card card-hover">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Education</h4>
+                            <p>B.E Computer Science</p>
+                        </div>
+                        <div class="info-card card-hover">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>Projects</h4>
+                            <p>2+ Completed</p>
+                        </div>
+                        <div class="info-card card-hover">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Certificates</h4>
+                            <p>Multiple Certifications</p>
+                        </div>
+                    </div>
+
+                    <div class="soft-skills">
+                        <h4>Soft Skills</h4>
+                        <div class="skills-tags">
+                            <span class="tag">Time Management</span>
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Adaptability</span>
+                            <span class="tag">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card card-3d">
+                            <div class="skill-icon python">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card card-3d">
+                            <div class="skill-icon html">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML/CSS</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card card-3d">
+                            <div class="skill-icon java">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h4>Java</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card card-3d">
+                            <div class="skill-icon js">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interests-section">
+                    <h3><i class="fas fa-heart"></i> Areas of Interest</h3>
+                    <div class="interests-grid">
+                        <div class="interest-card card-hover">
+                            <i class="fas fa-globe"></i>
+                            <h4>Web Development</h4>
+                            <p>Creating modern and responsive web applications</p>
+                        </div>
+                        <div class="interest-card card-hover">
+                            <i class="fas fa-database"></i>
+                            <h4>Database Management</h4>
+                            <p>Designing and managing efficient database systems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card card-3d">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Civic Welfare Complaint Management System</h3>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <p>Designed a cross-platform mobile application using Flutter that enables citizens to report civic issues, track complaint status, and receive real-time updates. Features include intuitive UI/UX designs with wireframes, interactive prototypes, and responsive layouts for dashboards and feedback modules.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Mobile Dev</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">Real-time</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SUDHARSHANAN-K-S/CivicWelfare" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card-3d">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Hotel Reservation System</h3>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <p>Hotel Reservation System is a Java-based application that simplifies hotel operations with a user-friendly interface. It handles customer registration, room booking, inventory management, and billing facilities. Hotel personnel can make bookings, track room availability in real-time, and create bills to improve business efficiency and guest comfort.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Database</span>
+                            <span class="tech-tag">GUI</span>
+                            <span class="tech-tag">Management</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SUDHARSHANAN-K-S/HOTEL_RESERVATION_SYSTEM" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Education & Certificates</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="education-content">
+                <div class="timeline">
+                    <div class="timeline-item card-3d">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - 2027</span>
+                            <h3>Bachelor of Engineering (Computer Science)</h3>
+                            <h4>M.KUMARASAMY COLLEGE OF ENGINEERING</h4>
+                            <p class="cgpa"><i class="fas fa-star"></i> CGPA: 7.66 (Till 4 Semester)</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item card-3d">
+                        <div class="timeline-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 - 2023</span>
+                            <h3>Higher Secondary Education</h3>
+                            <h4>KONGU MATRIC HIGHER SECONDARY SCHOOL</h4>
+                            <p class="cgpa"><i class="fas fa-star"></i> Percentage: 87.16%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificates">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="certificates-grid">
+                        <div class="certificate-card card-hover">
+                            <div class="certificate-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python Basics</h4>
+                            <p>University of Michigan (Coursera)</p>
+                        </div>
+                        <div class="certificate-card card-hover">
+                            <div class="certificate-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>AI & Machine Learning</h4>
+                            <p>Marcello Tech - One Month Internship</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements">
+                    <h3><i class="fas fa-trophy"></i> Co-Curricular Activities</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-card card-hover">
+                            <i class="fas fa-award"></i>
+                            <p>Coordinated campus events "Best Manager" and "Tech Connection"</p>
+                        </div>
+                        <div class="achievement-card card-hover">
+                            <i class="fas fa-medal"></i>
+                            <p>Secured 1st place in the Coding Event at INNOVATIX'25, organized by CSI – Kongu Engineering College (Feb 2025)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card card-3d">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <a href="mailto:sudharshanansathishkumar@gmail.com">sudharshanansathishkumar@gmail.com</a>
+                    </div>
+                    <div class="contact-card card-3d">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Phone</h4>
+                        <a href="tel:+919488176499">+91 94881-76499</a>
+                    </div>
+                    <div class="contact-card card-3d">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Namakkal, Tamilnadu</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form card-3d" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Sudharshanan Sathishkumar</h3>
+                    <p>Software Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/sudharshanan14/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/SUDHARSHANAN-K-S" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:sudharshanansathishkumar@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sudharshanan Sathishkumar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
