@@ -1124,6 +1124,33 @@ section {
     color: var(--text-muted);
 }
 
+.certificate-details {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.certificate-details p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: var(--text-secondary);
+}
+
+.cert-score {
+    color: var(--warning-color) !important;
+    font-weight: 600;
+}
+
+.cert-duration {
+    color: var(--text-secondary) !important;
+}
+
+.cert-roll {
+    font-size: 0.75rem !important;
+    color: var(--text-muted) !important;
+    font-family: 'Courier New', monospace;
+}
+
 .achievements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
