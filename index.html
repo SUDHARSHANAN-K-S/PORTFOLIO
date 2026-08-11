@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sudharshanan Sathishkumar – Computer Science Engineering student specializing in Full Stack Development, Java, and ServiceNow. Explore my projects, certifications, and achievements." />
+  <meta name="keywords" content="Sudharshanan, Full Stack Developer, Java, ServiceNow, Flutter, React, Portfolio" />
+  <meta name="author" content="Sudharshanan Sathishkumar" />
+  <meta property="og:title" content="Sudharshanan Sathishkumar | Portfolio" />
+  <meta property="og:description" content="CS Engineering student passionate about Full Stack Development, Java & ServiceNow." />
+  <title>Sudharshanan Sathishkumar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Aurora Background Orbs -->
+  <div class="aurora-orb aurora-1"></div>
+  <div class="aurora-orb aurora-2"></div>
+  <div class="aurora-orb aurora-3"></div>
+
+  <!-- Film Grain Overlay -->
+  <div class="film-grain"></div>
+
+  <!-- Cursor Follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>S<span class="logo-dot">.</span>K<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+        <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-greeting">
+          <span class="greeting-line"></span>
+          <span>Hello, World! 👋</span>
+        </div>
+        <h1 class="hero-name">
+          I'm <span class="name-gradient" data-text="Sudharshanan">Sudharshanan</span>
+          <br />Sathishkumar
+        </h1>
+        <div class="hero-roles">
+          <span class="role-prefix">I'm a </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc">
+          Passionate CSE student crafting reliable, scalable software solutions. 
+          From Full Stack web apps to ServiceNow development — I build with purpose.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="viewWorkBtn">
+            <span>View My Work</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline" id="contactBtn">Get In Touch</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://www.linkedin.com/in/sudharshanan14" target="_blank" rel="noopener" class="social-icon" id="linkedinHero" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.github.com/SUDHARSHANAN-K-S" target="_blank" rel="noopener" class="social-icon" id="githubHero" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+          <a href="mailto:sudharshanansathishkumar@gmail.com" class="social-icon" id="emailHero" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-container">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <img src="profile.png" alt="Sudharshanan Sathishkumar" class="avatar-img" id="profileImg" />
+          <div class="avatar-badge">
+            <span class="badge-dot"></span>
+            <span>Available for Opportunities</span>
+          </div>
+        </div>
+        <div class="floating-cards">
+          <div class="float-card card-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Full Stack</span>
+          </div>
+          <div class="float-card card-2">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>ServiceNow</span>
+          </div>
+          <div class="float-card card-3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>AI / ML</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            A passionate <strong>Computer Science Engineering student</strong> at M. Kumarasamy College of Engineering, with a burning curiosity for technology and an obsession with building things that matter.
+          </p>
+          <p class="about-body">
+            I thrive at the intersection of creativity and logic — whether it's crafting seamless full-stack applications, developing ServiceNow solutions, or exploring the frontiers of Generative AI. My journey in tech is driven by a desire to create software that solves real problems and delivers real value.
+          </p>
+          <p class="about-body">
+            Beyond the screen, I'm a basketball captain who led my team to multiple victories — proof that leadership, teamwork, and discipline aren't just for the court.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">📍 Location</span>
+              <span class="info-value">Namakkal, Tamil Nadu</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🎓 Degree</span>
+              <span class="info-value">B.E Computer Science & Engineering</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🏫 College</span>
+              <span class="info-value">M. Kumarasamy College of Engineering</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📊 CGPA</span>
+              <span class="info-value">7.66 (2023–2027)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">💡 Interests</span>
+              <span class="info-value">Full Stack Dev, ServiceNow</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🗣️ Languages</span>
+              <span class="info-value">Tamil, English</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card" id="statProjects">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card" id="statCerts">
+            <div class="stat-number" data-target="6">0</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card" id="statHackathons">
+            <div class="stat-number" data-target="4">0</div>
+            <div class="stat-label">Hackathons</div>
+          </div>
+          <div class="stat-card" id="statAwards">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Awards Won</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot">
+            <div class="dot-inner"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <h3 class="timeline-role">Virtual Internship – AI & Machine Learning</h3>
+                <span class="timeline-company">Infosys Springboard</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  July 2026 – Present
+                </span>
+                <span class="timeline-badge ongoing">Ongoing</span>
+              </div>
+            </div>
+            <ul class="timeline-points">
+              <li>Worked on AI/ML projects using Python and machine learning techniques.</li>
+              <li>Gained practical experience by developing hands-on projects and solving real-world problems.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot">
+            <div class="dot-inner"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <h3 class="timeline-role">Internship – Full Stack Development</h3>
+                <span class="timeline-company">Bixcel Institute of Technologies Pvt Ltd, Karur</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  March 2026 – April 2026
+                </span>
+                <span class="timeline-badge completed">Completed</span>
+              </div>
+            </div>
+            <ul class="timeline-points">
+              <li>Developed real-time Full Stack applications with frontend, backend, and database integration.</li>
+              <li>Enhanced web development, debugging, and deployment skills through hands-on project implementation.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Full Stack</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Database</span>
+              <span class="tag">Deployment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- SwipeX -->
+        <div class="project-card featured" id="projectSwipeX">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <div class="project-links">
+              <span class="project-badge featured-badge">Ongoing</span>
+            </div>
+          </div>
+          <h3 class="project-title">SwipeX</h3>
+          <p class="project-subtitle">AI-Powered Job Discovery &amp; Career Assistance Platform</p>
+          <p class="project-desc">
+            AI-powered job portal with swipe-based interface for personalized recommendations and application tracking. Features AI-driven resume analysis, ATS score evaluation, and role-based dashboards for job seekers, recruiters, and administrators.
+          </p>
+          <div class="project-role">
+            <span class="role-label">Role:</span>
+            <span class="role-value">Front End Developer</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-chip">React.js</span>
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">FastAPI</span>
+            <span class="tech-chip">PostgreSQL</span>
+            <span class="tech-chip">OpenAI API</span>
+            <span class="tech-chip">Docker</span>
+            <span class="tech-chip">AWS</span>
+          </div>
+        </div>
+
+        <!-- CivicWelfare -->
+        <div class="project-card" id="projectCivic">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SUDHARSHANAN-K-S/CivicWelfare" target="_blank" rel="noopener" class="proj-link" id="civicGithub" aria-label="CivicWelfare GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Civic Welfare</h3>
+          <p class="project-subtitle">Complaint Management System</p>
+          <p class="project-desc">
+            Cross-platform app for citizens to report civic issues and track resolution. Includes role-based dashboards, AI-powered issue categorization, real-time notifications, and Firebase with GPS integration.
+          </p>
+          <div class="project-role">
+            <span class="role-label">Role:</span>
+            <span class="role-value">Flutter Application Developer</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-chip">Flutter</span>
+            <span class="tech-chip">Dart</span>
+            <span class="tech-chip">Firebase</span>
+            <span class="tech-chip">GPS</span>
+            <span class="tech-chip">REST API</span>
+            <span class="tech-chip">AI Analysis</span>
+          </div>
+          <div class="project-year">2025</div>
+        </div>
+
+        <!-- Hotel Reservation -->
+        <div class="project-card" id="projectHotel">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 22V8l9-6 9 6v14H3z"/><rect x="9" y="14" width="6" height="8"/><path d="M3 9h18"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SUDHARSHANAN-K-S/HOTEL_RESERVATION_SYSTEM" target="_blank" rel="noopener" class="proj-link" id="hotelGithub" aria-label="Hotel Reservation System GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Hotel Reservation System</h3>
+          <p class="project-subtitle">Java-Based Management System</p>
+          <p class="project-desc">
+            Java-based system managing customer registration, room booking, and billing. Implemented room availability tracking and database integration to streamline hotel operations.
+          </p>
+          <div class="project-role">
+            <span class="role-label">Role:</span>
+            <span class="role-value">Software Developer</span>
+          </div>
+          <div class="project-tech">
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">JDBC</span>
+            <span class="tech-chip">OOP</span>
+          </div>
+          <div class="project-year">2024</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Toolkit</span>
+        <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category" id="skillLang">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML &amp; CSS</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Dart</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skillFramework">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Frameworks &amp; Libraries</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">React.js</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Flutter</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">FastAPI / Django REST</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skillAI">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>AI Technologies</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Generative AI</span>
+            <span class="skill-badge">Agentic AI</span>
+            <span class="skill-badge">Machine Learning</span>
+            <span class="skill-badge">scikit-learn</span>
+            <span class="skill-badge">spaCy</span>
+            <span class="skill-badge">OpenAI API</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skillTools">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">VS Code</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">GitHub</span>
+            <span class="skill-badge">Docker</span>
+            <span class="skill-badge">AWS / Azure</span>
+            <span class="skill-badge">Firebase</span>
+            <span class="skill-badge">MySQL</span>
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">ServiceNow</span>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skillSoft">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Leadership</span>
+            <span class="skill-badge">Adaptability</span>
+            <span class="skill-badge">Time Management</span>
+            <span class="skill-badge">Quick Learning</span>
+            <span class="skill-badge">Team Player</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Verified Learning</span>
+        <h2 class="section-title">Certifications &amp; <span class="highlight">Courses</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card" id="certCAD">
+          <div class="cert-icon servicenow">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Certified Application Developer (CAD)</h3>
+            <span class="cert-issuer">ServiceNow</span>
+          </div>
+          <div class="cert-badge">Official Cert</div>
+        </div>
+
+        <div class="cert-card" id="certCSA">
+          <div class="cert-icon servicenow">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Certified System Administrator (CSA)</h3>
+            <span class="cert-issuer">ServiceNow</span>
+          </div>
+          <div class="cert-badge">Official Cert</div>
+        </div>
+
+        <div class="cert-card" id="certIoT">
+          <div class="cert-icon nptel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Introduction to Industry 4.0 &amp; Industrial IoT</h3>
+            <span class="cert-issuer">IIT Kharagpur / SWAYAM</span>
+          </div>
+          <div class="cert-badge">NPTEL</div>
+        </div>
+
+        <div class="cert-card" id="certDataAnalytics">
+          <div class="cert-icon nptel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Data Analytics with Python</h3>
+            <span class="cert-issuer">IIT Roorkee / SWAYAM</span>
+          </div>
+          <div class="cert-badge">NPTEL</div>
+        </div>
+
+        <div class="cert-card" id="certHCI">
+          <div class="cert-icon nptel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Human Computer Interaction</h3>
+            <span class="cert-issuer">IIIT Delhi / SWAYAM</span>
+          </div>
+          <div class="cert-badge">NPTEL</div>
+        </div>
+
+        <div class="cert-card" id="certDSA">
+          <div class="cert-icon bootcamp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">International DSA Bootcamp for DeepTech</h3>
+            <span class="cert-issuer">Data Structures &amp; Algorithms – 1 Month</span>
+          </div>
+          <div class="cert-badge">Bootcamp</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="section section-alt" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Proud Moments</span>
+        <h2 class="section-title">Achievements &amp; <span class="highlight">Awards</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card gold" id="achElectrathon">
+          <div class="ach-icon">🏆</div>
+          <div class="ach-content">
+            <span class="ach-position">4th Place</span>
+            <h3 class="ach-title">ELECTRATHON'26</h3>
+            <p class="ach-desc">National Level 24-Hours Hackathon at M. Kumarasamy College of Engineering</p>
+            <span class="ach-tag">National Level</span>
+          </div>
+        </div>
+
+        <div class="achievement-card gold" id="achInnovatix">
+          <div class="ach-icon">🥇</div>
+          <div class="ach-content">
+            <span class="ach-position">1st Place</span>
+            <h3 class="ach-title">Coding Event – INNOVATIX'25</h3>
+            <p class="ach-desc">Coding event organized by CSI at Kongu Engineering College</p>
+            <span class="ach-tag">Winner</span>
+          </div>
+        </div>
+
+        <div class="achievement-card silver" id="achChakravyuh">
+          <div class="ach-icon">🌟</div>
+          <div class="ach-content">
+            <span class="ach-position">Participant</span>
+            <h3 class="ach-title">CHAKRAVYUH</h3>
+            <p class="ach-desc">Google Student Ambassadors Program at M. Kumarasamy College of Engineering</p>
+            <span class="ach-tag">Google GSA</span>
+          </div>
+        </div>
+
+        <div class="achievement-card silver" id="achAIAscend">
+          <div class="ach-icon">🚀</div>
+          <div class="ach-content">
+            <span class="ach-position">Participant</span>
+            <h3 class="ach-title">AI ASCEND 2026</h3>
+            <p class="ach-desc">National Level 24-Hours Hackathon at Saveetha Engineering College, powered by Kyndryl &amp; AWS</p>
+            <span class="ach-tag">AWS · Kyndryl</span>
+          </div>
+        </div>
+
+        <div class="achievement-card gold" id="achCMTrophy">
+          <div class="ach-icon">🏀</div>
+          <div class="ach-content">
+            <span class="ach-position">1st Place</span>
+            <h3 class="ach-title">CM Trophy Basketball Tournament</h3>
+            <p class="ach-desc">Karur District – College Level (2025)</p>
+            <span class="ach-tag">Sports</span>
+          </div>
+        </div>
+
+        <div class="achievement-card silver" id="achAnnaUniv">
+          <div class="ach-icon">🥈</div>
+          <div class="ach-content">
+            <span class="ach-position">Runner-Up</span>
+            <h3 class="ach-title">Anna University Zonal Basketball</h3>
+            <p class="ach-desc">Zonal Level Basketball Tournament – College Level (2025)</p>
+            <span class="ach-tag">Sports</span>
+          </div>
+        </div>
+
+        <div class="achievement-card gold" id="achSchoolBball">
+          <div class="ach-icon">🏅</div>
+          <div class="ach-content">
+            <span class="ach-position">1st Place · Captain</span>
+            <h3 class="ach-title">School Zonal Basketball Tournament</h3>
+            <p class="ach-desc">Led the school basketball team as captain to first place (2022)</p>
+            <span class="ach-tag">Captain</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-intro">
+            I'm always open to exciting opportunities, collaborations, or just a good tech conversation. Feel free to reach out!
+          </p>
+          <div class="contact-cards">
+            <a href="mailto:sudharshanansathishkumar@gmail.com" class="contact-card" id="contactEmail">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">sudharshanansathishkumar@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919488176499" class="contact-card" id="contactPhone">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.64A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-card-label">Phone</span>
+                <span class="contact-card-value">+91 94881 76499</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/sudharshanan14" target="_blank" rel="noopener" class="contact-card" id="contactLinkedIn">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">linkedin.com/in/sudharshanan14</span>
+              </div>
+            </a>
+            <a href="https://www.github.com/SUDHARSHANAN-K-S" target="_blank" rel="noopener" class="contact-card" id="contactGitHub">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </div>
+              <div>
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">github.com/SUDHARSHANAN-K-S</span>
+              </div>
+            </a>
+            <div class="contact-card location-card" id="contactLocation">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-card-label">Location</span>
+                <span class="contact-card-value">Namakkal, Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>S<span class="logo-dot">.</span>K<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-text">Designed &amp; Built by <strong>Sudharshanan Sathishkumar</strong></p>
+      <p class="footer-copy">© 2026 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
